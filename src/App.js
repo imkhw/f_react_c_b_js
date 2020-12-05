@@ -1,20 +1,23 @@
 import React from 'react'
 
-import UseStateBasic from './UseStateBasic'
-import UseStateArray from './UseStateArray'
-import UseStateObject from './UseStateObject'
-import UseStateCounter from './UseStateCounter'
+import UseEffectBasic from './UseEffectBasic'
+import UseEffectConditional from './UseEffectConditional'
+import UseEffectDependencyList from './UseEffectDependencyList'
+import UseEffectCleanupFunction from './UseEffectCleanupFunction'
+import UseEffectFetchData from './UseEffectFetchData'
 
 const App = () => {
     return (
         <React.Fragment>
-            <UseStateBasic />
-            <hr></hr>
-            <UseStateArray />
-            <hr></hr>
-            <UseStateObject />
-            <hr></hr>
-            <UseStateCounter />
+            <UseEffectBasic />
+            <hr />
+            <UseEffectConditional />
+            <hr />
+            <UseEffectDependencyList />
+            <hr />
+            <UseEffectCleanupFunction />
+            <hr />
+            <UseEffectFetchData />
         </React.Fragment>
     )
 }
