@@ -1,23 +1,21 @@
 import React from 'react'
 
-import UseEffectBasic from './UseEffectBasic'
-import UseEffectConditional from './UseEffectConditional'
-import UseEffectDependencyList from './UseEffectDependencyList'
-import UseEffectCleanupFunction from './UseEffectCleanupFunction'
-import UseEffectFetchData from './UseEffectFetchData'
+import MultipleReturns from './MultipleReturns'
+import  CircuitEvaluation from './CircuitEvaluation'
+import TernaryOperator from './TernaryOperator'
+import ShowHideComponent from './ShowHideComponent'
 
 const App = () => {
     return (
         <React.Fragment>
-            <UseEffectBasic />
+            <MultipleReturns />
             <hr />
-            <UseEffectConditional />
+            <CircuitEvaluation />
             <hr />
-            <UseEffectDependencyList />
+            <TernaryOperator />
             <hr />
-            <UseEffectCleanupFunction />
+            <ShowHideComponent />
             <hr />
-            <UseEffectFetchData />
         </React.Fragment>
     )
 }
