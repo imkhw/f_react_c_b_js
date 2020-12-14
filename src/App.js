@@ -1,20 +1,14 @@
 import React from 'react'
 
-import MultipleReturns from './MultipleReturns'
-import  CircuitEvaluation from './CircuitEvaluation'
-import TernaryOperator from './TernaryOperator'
-import ShowHideComponent from './ShowHideComponent'
+import ControlledInputs from './ControlledInputs'
+import MultipleInputs from './MultipleInputs'
 
 const App = () => {
     return (
         <React.Fragment>
-            <MultipleReturns />
+            <ControlledInputs />
             <hr />
-            <CircuitEvaluation />
-            <hr />
-            <TernaryOperator />
-            <hr />
-            <ShowHideComponent />
+            <MultipleInputs />
             <hr />
         </React.Fragment>
     )
