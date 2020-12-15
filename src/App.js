@@ -1,11 +1,11 @@
 import React from 'react'
 
-import UseRef from './UseRef'
+import UseReducer from './useReducer'
 
 const App = () => {
     return (
         <React.Fragment>
-            <UseRef />
+            <UseReducer />
             <hr />
         </React.Fragment>
     )
