@@ -1,11 +1,11 @@
 import React from 'react'
 
-import UseReducer from './useReducer'
+import PropDrilling from './PropDrilling'
 
 const App = () => {
     return (
         <React.Fragment>
-            <UseReducer />
+            <PropDrilling />
             <hr />
         </React.Fragment>
     )
