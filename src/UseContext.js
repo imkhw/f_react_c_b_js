@@ -1,8 +1,10 @@
-import React, {useState} from 'react'
+import React, {useState, useContext} from 'react'
 
 import {data} from './data'
 
-const PropDrilling = () => {
+const TaskContext = React.createContext()
+
+const UseContext = () => {
     const [todos, setTodos] = useState(data)
 
     const removeTask = (id) => {
@@ -14,21 +16,21 @@ const PropDrilling = () => {
     }
     
     return (
-        <React.Fragment>
-            <h4>Prop Drilling</h4>
-            <Todos todos={todos} removeTask={removeTask} />
-        </React.Fragment>
+        <TaskContext.Provider value={{removeTask}}>
+            <h4>useContext</h4>
+            <Todos todos={todos} />
+        </TaskContext.Provider>
     )
 }
 
-const Todos = ({todos, removeTask}) => {
+const Todos = ({todos}) => {
     return (
         <React.Fragment>
             <h4>Todos</h4>
             {
                 todos.map((todo) => {
                     return (
-                        <Task key={todo.id} {...todo} removeTask={removeTask} />   
+                        <Task key={todo.id} {...todo} />   
                     )
                 })
             }
@@ -36,7 +38,8 @@ const Todos = ({todos, removeTask}) => {
     )
 }
 
-const Task = ({id, task, removeTask}) => {
+const Task = ({id, task}) => {
+    const {removeTask} = useContext(TaskContext)
     return (
         <React.Fragment>
             <div>
@@ -47,4 +50,4 @@ const Task = ({id, task, removeTask}) => {
     )
 }
 
-export default PropDrilling
+export default UseContext
