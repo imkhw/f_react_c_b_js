@@ -1,11 +1,11 @@
 import React from 'react'
 
-import PropDrilling from './PropDrilling'
+import UseContext from './UseContext'
 
 const App = () => {
     return (
         <React.Fragment>
-            <PropDrilling />
+            <UseContext />
             <hr />
         </React.Fragment>
     )
