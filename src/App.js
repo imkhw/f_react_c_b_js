@@ -1,11 +1,11 @@
 import React from 'react'
 
-import UseContext from './UseContext'
+import CustomHooks from './CustomHooks'
 
 const App = () => {
     return (
         <React.Fragment>
-            <UseContext />
+            <CustomHooks />
             <hr />
         </React.Fragment>
     )
