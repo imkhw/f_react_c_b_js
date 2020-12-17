@@ -1,18 +1,18 @@
 export const data = [
     {
         id: 1, 
-        task: 'Learn react'
+        name: 'zak'
     },
     {
         id: 2,
-        task: 'Learn node api'
+        name: 'mak'
     },
     {
         id: 3,
-        task: 'Do exercise'
+        name: 'zio'
     },
     {
         id: 4,
-        task: 'Take a rest'
+        name: 'mio'
     },
 ]
