@@ -1,11 +1,11 @@
 import React from 'react'
 
-import CustomHooks from './CustomHooks'
+import PropTypes from './PropTypes'
 
 const App = () => {
     return (
         <React.Fragment>
-            <CustomHooks />
+            <PropTypes />
             <hr />
         </React.Fragment>
     )
