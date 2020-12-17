@@ -1,11 +1,11 @@
 import React from 'react'
 
-import PropTypes from './PropTypes'
+import ReactRouter from './ReactRouter'
 
 const App = () => {
     return (
         <React.Fragment>
-            <PropTypes />
+            <ReactRouter />
             <hr />
         </React.Fragment>
     )
