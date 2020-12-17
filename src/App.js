@@ -1,11 +1,11 @@
 import React from 'react'
 
-import ReactRouter from './ReactRouter'
+import PerformanceOptimization from './PerformanceOptimization'
 
 const App = () => {
     return (
         <React.Fragment>
-            <ReactRouter />
+            <PerformanceOptimization />
             <hr />
         </React.Fragment>
     )
